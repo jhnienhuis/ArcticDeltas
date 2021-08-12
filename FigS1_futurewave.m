@@ -109,4 +109,9 @@ caxis([0.5 5])
 c.Limits = [0.5 5];
 c.Label.String = 'Q_{Wave},RCP8.5 (2081-2100) / Q_{Wave},(1979-2009)';
 
+set(findall(gcf,'type','Axes'), 'FontSize', 7)
+set(findall(gcf,'Type','text'), 'FontSize', 7)
+set(gcf, 'Units', 'Centimeters', 'OuterPosition', [0, 0, 18.3, 10]);
+saveas(gcf,'FigS1_futurewaves.svg')
+
 end
